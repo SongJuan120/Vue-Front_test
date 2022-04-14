@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2015",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "strictNullChecks": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}

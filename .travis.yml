@@ -1,0 +1,13 @@
+env:
+  global:
+    - CODACY_PROJECT_TOKEN=954cf50268a248a788813e2125b48df1
+language: node_js
+node_js:
+  - "8"
+before_install:
+  - npm install codacy-coverage
+script:
+  - npm run build
+  - npm run test
+after_success:
+  - cat ./test/unit/coverage/lcov.info | ./node_modules/.bin/codacy-coverage
